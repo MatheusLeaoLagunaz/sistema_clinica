@@ -1,13 +1,13 @@
-package br.com.matheusleao.sistema_clinica;
+package br.com.matheusleao.clinic_system;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SistemaClinicaApplication {
+public class ClinicSystemaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SistemaClinicaApplication.class, args);
+        SpringApplication.run(ClinicSystemaApplication.class, args);
     }
 
 }

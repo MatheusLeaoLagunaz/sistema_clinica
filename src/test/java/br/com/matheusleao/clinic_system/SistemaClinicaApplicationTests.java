@@ -1,4 +1,4 @@
-package br.com.matheusleao.sistema_clinica;
+package br.com.matheusleao.clinic_system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

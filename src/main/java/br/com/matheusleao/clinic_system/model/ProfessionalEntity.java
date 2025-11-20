@@ -1,14 +1,16 @@
-package br.com.matheusleao.sistema_clinica.model;
+package br.com.matheusleao.clinic_system.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Data
 public class ProfessionalEntity {
 
     @Id
@@ -16,10 +18,10 @@ public class ProfessionalEntity {
     private UUID id;
 
     @NotBlank
-    private String nome;
+    private String name;
 
     @NotBlank
-    private String senha;
+    private String password;
 
     @NotBlank
     @Email
@@ -30,13 +32,13 @@ public class ProfessionalEntity {
     private String cpf;
 
     @NotBlank
-    private String especialidade;
+    private String crm;
 
     @NotBlank
-    private String registroProfissional;
+    private String telefone;
 
     @OneToMany(mappedBy = "professional")
-    private List<ConsultationEntity> consultations;
+    private List<AppointmentEntity> consultations;
 
     @ManyToOne
     @JoinColumn(name = "specialty_id", nullable = false)

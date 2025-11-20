@@ -1,6 +1,6 @@
-package br.com.matheusleao.sistema_clinica.repository;
+package br.com.matheusleao.clinic_system.repository;
 
-import br.com.matheusleao.sistema_clinica.model.PatientEntity;
+import br.com.matheusleao.clinic_system.model.PatientEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

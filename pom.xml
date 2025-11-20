@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.com.matheusleao</groupId>
-    <artifactId>sistema_clinica</artifactId>
+    <artifactId>clinic_system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sistema_clinica</name>
     <description>sistema_clinica</description>
