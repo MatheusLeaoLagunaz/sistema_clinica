@@ -14,7 +14,6 @@ public interface ProfessionalMapper {
     ProfessionalResponseDTO toResponse(ProfessionalEntity entity);
 
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "password", ignore = true)
     @Mapping(target = "consultations", ignore = true)
     @Mapping(target = "specialty", ignore = true)
     ProfessionalEntity toEntity(ProfessionalRequestDTO dto);
