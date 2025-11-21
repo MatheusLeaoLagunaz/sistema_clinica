@@ -1,5 +1,7 @@
 package br.com.matheusleao.clinic_system.controller;
 
+import br.com.matheusleao.clinic_system.dto.ProfessionalRequestDTO;
+import br.com.matheusleao.clinic_system.dto.ProfessionalResponseDTO;
 import br.com.matheusleao.clinic_system.model.ProfessionalEntity;
 import br.com.matheusleao.clinic_system.repository.ProfessionalRepository;
 import br.com.matheusleao.clinic_system.service.ProfessionalService;
@@ -18,8 +20,8 @@ public class ProfessionalController {
     private ProfessionalService professionalService;
 
     @PostMapping()
-    public ResponseEntity<ProfessionalEntity> save(@RequestBody ProfessionalEntity professionalEntity) {
-        ProfessionalEntity professional = professionalService.save(professionalEntity);
+    public ResponseEntity<ProfessionalResponseDTO> save(@RequestBody ProfessionalRequestDTO professionalRequestDTO) {
+        ProfessionalResponseDTO professional = professionalService.save(professionalRequestDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(professional);
     }
 
